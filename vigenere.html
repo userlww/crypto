@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>维吉尼亚密码</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="container">
+    <div class="input">
+        <div class="input-group input-group-sm">
+            <span class="input-group-addon" >明文</span>
+            <input type="text" id="mingwen" class="mingwen form-control">
+        </div>
+        <br>
+        <div class=" k1 input-group">
+            <span class="words input-group-addon">加密密钥</span>
+            <input type="text"  class="form-control" id="k1">
+        </div>
+        <br>
+        <div class=" k2 input-group">
+            <span class="input-group-addon">解密密钥</span>
+            <input type="text" class="form-control" id="k3">
+        </div>
+        <br>
+        <div class=" output input-group">
+            <span class="input-group-addon">密文</span>
+            <textarea id="miwen" class="form-control"></textarea>
+        </div>
+        <div class="mingwenyu input-group">
+            <span class="input-group-addon" >明文</span>
+            <textarea id="mingwenyu" class="form-control"></textarea>
+        </div>
+    </div>
+    <div class="anniuzu">
+        <ul>
+            <li><input type="submit" class="  btn btn-info " value="加密" onclick="jiami()"></li>
+            <li><input type="submit" class="  btn btn-info " value="已知密钥破解" onclick="k2pojie()"></li>
+            <li><input type="submit" class="  btn btn-info " value="唯密文破解" onclick="baopo()"></li>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript" src="vigenere.js"></script>
+<script type="text/javascript" src="js/vue.js"></script>
+</body>
+</html>
