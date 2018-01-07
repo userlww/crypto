@@ -1,0 +1,65 @@
+*{
+  margin:0;
+  padding: 0;
+ }
+
+body{
+	font-family:Georgia,"微软雅黑";
+	/*背景图片不重复 且居中*/
+	background:url(../imge/i-login.jpg) top center no-repeat #c4c4c4;
+	color: #3a3a3a;
+}
+/*清除*/
+.head{
+	clear:both;
+ }
+/*表单样式*/
+form{
+	width:406px;
+	margin:170px auto 0;
+}
+/*给表单去边框*/
+fieldset{
+	border:0;
+ }
+
+label{
+	 width:115px;
+     text-align:right;
+	 float:left;
+	 margin:0 10px 0 0;
+	 padding:9px 0 0 0;
+	 font-size:16px;
+	}
+
+input{
+	width:220px;
+	display:block;
+	 padding: 4px;
+	 margin:0 0 10px 0;
+	 font-size:18px;
+	 color: #3a3a3a;
+	}
+/*小按钮样式*/
+input[type=checkbox]{
+	display:inline-block;
+    width: 20px;
+	margin:0;
+	 }
+
+.button{
+  background: url(../imge/button-bg.png) repeat-x top center;
+  border: 1px solid #999;
+  -moz-border-radius: 5px;
+  padding: 5px;
+  color: black;
+  font-weight: bold;
+ -webkit-border-radius: 5px;
+  font-size: 13px;
+   width: 70px;
+}
+/*鼠标悬停变颜色*/
+.button:hover{
+	background:white;
+	color: black;
+	}

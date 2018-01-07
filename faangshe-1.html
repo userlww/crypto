@@ -10,20 +10,20 @@
 <body>
 <div class="container">
     <div class="input">
-            <div class="input-group input-group-sm">
-                <span class="input-group-addon" >明文</span>
-                <input type="text" id="mingwen" class="mingwen form-control">
-            </div>
-            <br>
-            <div class=" k1 input-group">
-                <span class="words input-group-addon">加密k1</span>
-                <input type="text"  class="form-control" id="k1">
-            </div>
+        <div class="input-group input-group-sm">
+            <span class="input-group-addon" >明文</span>
+            <input type="text" id="mingwen" class="mingwen form-control">
+        </div>
         <br>
-            <div class=" k2 input-group">
-                <span class="input-group-addon">加密k2</span>
+        <div class=" k1 input-group">
+            <span class="words input-group-addon">加密k1</span>
+            <input type="text"  class="form-control" id="k1">
+        </div>
+        <br>
+        <div class=" k2 input-group">
+            <span class="input-group-addon">加密k2</span>
             <input type="text" class="form-control" id="k2">
-            </div>
+        </div>
         <br>
         <div class=" k2 input-group">
             <span class="input-group-addon">解密密钥</span>
@@ -41,13 +41,14 @@
     </div>
     <div class="anniuzu">
         <ul>
-            <li><input type="submit" class="  btn btn-info " value="加密" onclick="jiami()"></li>
-            <li><input type="submit" class="  btn btn-info " value="求k2" onclick="qiuk2()"></li>
-            <li><input type="submit" class="  btn btn-info " value="已知密钥破解" onclick="k2pojie()"></li>
-            <li><input type="submit" class="  btn btn-info " value="暴力破解" onclick="baopo()"></li>
+            <li><input type="submit" class="  btn btn-info jiaMi" value="加密" ></li>
+            <li><input type="submit" class="  btn btn-info qiuK2" value="求k2" ></li>
+            <li><input type="submit" class="  btn btn-info k2PoJie" value="已知密钥破解"></li>
+            <li><input type="submit" class="  btn btn-info BaoPo" value="暴力破解"></li>
         </ul>
-     </div>
+    </div>
 </div>
-<script src="js/fangshe.js"></script>
+<script src="js/fangshe-1.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </body>
 </html>

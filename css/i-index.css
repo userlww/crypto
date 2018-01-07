@@ -1,0 +1,183 @@
+/*外边距 内边距为 0*/
+*{
+	margin:0;
+    padding:0;
+    text-decoration:none;
+    font-size:"微软雅黑";
+}
+/*让播放音乐的标志隐藏起来*/
+.music{
+	display:none;
+}
+/*背景图片插入*/
+body{
+	background:#f3f3f3 url(../img/1.jpg) repeat center bottom;
+	text-align:center;
+	overflow:hidden;
+}
+
+/*所有列表标签去点*/
+ul,dl,li,dd,dl {
+ list-style:none;
+}
+
+/*头部横条*/
+#head {
+	position:fixed;
+	background:#292b2e;
+	top:0;
+	width:100%;
+	z-index:999;
+	height:80px;
+	}
+
+/*头部文字标题*/
+#title {
+	 color:#9E9595;
+	 padding-top:19px;
+     float:left;}
+#title a {
+	display:block;
+	width:190px;
+	height:80px;
+	text-indent:-9999em;
+}
+
+/*导航栏*/
+#nav {
+	width:1000px;
+	overflow:hidden;
+	margin:0 auto;
+	height:80px;}
+#nav ul {
+	float:right;
+	border-right:1px solid #484a4c;
+}
+#nav ul li {
+  float:left;
+  width:120px;
+  height:80px;
+  border-left:1px solid #484a4c;
+}
+#nav ul li a {
+	display:block;
+	width:120px;
+	height:80px;
+	text-align:center;
+	color:#fff;
+	/*这里的第一个值是字体大小  第二个值是上下距离*/
+	font:bold 14px/80px "微软雅黑";
+	text-shadow: 1px 1px 1px #000
+}
+#nav ul li a:hover {
+	background:#F6B26D;
+	text-decoration:none
+}
+
+/*中间部分*/
+.content {
+	position:relative;
+	height:100%;
+	margin: 0 auto;
+	padding:10%;
+}
+.content-a{
+	width:1000px;
+	height:565px;
+	overflow:hidden;
+	margin:0 auto;
+}
+.content-a dl dt{
+	height:35px;
+	line-height:35px;
+	margin-bottom:20px;
+}
+.content-a dl dt h1{
+	font-size:32px;
+	font-family:"微软雅黑";
+	 color:#fff;
+	 font-weight:normal;
+	 float:left;
+	}
+.content-a dl dt div{
+	float:right;
+	font-size:12px;
+}
+.content-a dl dd ul{
+	width:1000px;
+	height:565px;
+	overflow:hidden;
+}
+.content-a dl dd ul li{
+	width:240px;
+	height:120px;
+	overflow:hidden;
+	float:left;
+	margin:5px;
+	margin:4px;
+	display:inline;
+	 padding:1px;
+	 opacity:1.5;
+	 position:relative;
+	}
+.content-a dl dd ul li span{
+ display:none;
+}
+.content-a dl dd ul li span a{
+	color:#fff;
+	font-size:14px;
+	text-decoration:none;
+}
+.content-a dl dd ul li:hover span{
+	text-align:center;
+	background:#1E1D1D;
+	height:20px;
+	line-height:20px;
+	opacity:0.5;
+	font-family:"微软雅黑";
+	display:block;
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+}
+
+/*当鼠标移上去变透明度和虚线*/
+.content-a dl dd ul li:hover{
+	 opacity:0.55;
+	 padding:0px;
+	 border:1px dashed #fcfcfc;
+	}
+
+/*	这里的one four 代表每隔一张图片的距离给它边距， 不然会紧凑在一起*/
+.content-a dl dd ul li[class="one"]{ margin-left:0; }
+.content-a dl dd ul li[class="four"]{ margin-right:0}
+
+/*所有logo给它一个不一样的背景颜色*/
+#logo_1{background:#0848FA;}
+#logo_2{background:#292929;}
+#logo_3{background:#0848FA;}
+#logo_4{background:#1c0c01;}
+#logo_5{background:#6b22ac;}
+#logo_6{background:#ffffff;}
+#logo_7{background:#ffffff;}
+#logo_8{background:#a3bd1b;}
+#logo_9{background:#ffffff;}
+#logo_10{background:#e1e0e0;}
+#logo_11{background:#ffffff;}
+#logo_12{background:#177cc4;}
+
+/*尾部内容部分*/
+#foot{
+	background:#333;
+	 z-index:999;
+	 padding:10px 0;
+	 text-align:center;
+	 position:absolute;
+	 width: 100%;bottom:0;
+	}
+
+#foot a{
+   color:#fff;
+   font-family:"微软雅黑";
+	}
